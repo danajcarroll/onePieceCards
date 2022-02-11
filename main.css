@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --luffyMain: #FB4848;
+    --luffySub: #CF1919;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #FF8B7B;
+    background: -moz-linear-gradient(top, #FF8B7B 0%, #FF9900 100%);
+    background: -webkit-linear-gradient(top, #FF8B7B 0%, #FF9900 100%);
+    background: linear-gradient(to bottom, #FF8B7B 0%, #FF9900 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    padding: 1.5rem;
+    background-color: pink;
+}
+ul {
+    list-style-type: none;
+}
+.characters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.characterCircles {
+    background-color: blue;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.characterCards {
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.colorBox {
+    background-color: var(--luffyMain);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+}
