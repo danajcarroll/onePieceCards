@@ -50,6 +50,16 @@ ul {
     list-style-type: none;
 }
 
+/* ******************** COLOUR CHANGERS ******************** */
+.mainColor {
+    background-color: var(--luffyMain);
+}
+.mainColorFont {
+    color: var(--luffyMain);
+}
+.subColor {
+    background-color: var(--luffySub);
+}
 /* ******************** CHARACTER CIRCLES ******************** */
 .characters {
     width: 100%;
@@ -79,7 +89,6 @@ ul {
 }
 /* ********** COLOUR BOX SECTION ********** */
 .colorBox {
-    background-color: var(--luffyMain);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -115,9 +124,6 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
 }
-.activeButton {
-    background-color: var(--luffySub);
-}
 
 /* ********** INFO BOX SECTION ********** */
 .infoBox {
@@ -127,22 +133,17 @@ button {
 .infoText {
     margin-bottom: 1rem;
 }
-span {
-    color: var(--luffyMain);
-}
 li {
     color: var(--greyText);
     font-size: 0.9rem;
 }
 .bountyBox {
     display: flex;
-    background-color: var(--luffyMain);
     border-radius: 0.5rem;
     color: var(--white);
     align-items: center;
 }
 .bountyTab {
-    background-color: var(--luffySub);
     display: flex;
     flex-direction: column;
     align-items: center;
