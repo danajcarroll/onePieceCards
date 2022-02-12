@@ -12,26 +12,29 @@ for (let i = 0; i < charCircle.length; i++) {
     charCircle[i].style.backgroundColor = `var(--${circleID}Main)`;
 };
 
-/* 
-Click charCircle and -> happens (id = 'luffy')
-
-- colorBox + bountyBox background color = `var(--${circleID}Main)`
-- activeButton + bountyTab backgroundColor = `var(--${circleID}Sub)`
-- .characterCards
-
-when you click charCircle, if the charCard with the same id + Card has the activeCard class, remove it
-*/
-
-// Changing character theme colours by clicking character buttons
+// Character Button Click
 for (let i = 0; i < charCircle.length; i++) {
     charCircle[i].addEventListener('click', function() {
         let circleID = charCircle[i].id;
-        // console.log(circleID);
+        console.log(circleID);
 
+        // Removes .activeCard class and adds .hiddenCard class
+        for (let i = 0; i < charCard.length; i++) {
+            charCard[i].classList.remove('activeCard');
+            charCard[i].classList.add('hiddenCard');
+        }
+        // Adds .activeCard and removes .hiddenCard to current characterCard
+        if (charCard[i].id === `${circleID}Card`) {
+            console.log(charCard[i]);
+            charCard[i].classList.add('activeCard');
+            charCard[i].classList.remove('hiddenCard');
+        }
+        
+        // Changing color theme
         for (let i = 0; i < mainColor.length; i++) {
             mainColor[i].style.backgroundColor = `var(--${circleID}Main)`;
         }
-        for (let i = 0; i < subColor.length; i++) {
+        for (let i = 0; i < mainFontColor.length; i++) {
             mainFontColor[i].style.color = `var(--${circleID}Main)`;
         }
         for (let i = 0; i < subColor.length; i++) {
