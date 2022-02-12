@@ -44,7 +44,7 @@ body {
 main {
     padding: 1.5rem;
     width: 100%;
-    /* background-color: pink; */
+    max-width: 390px;
 }
 ul {
     list-style-type: none;
@@ -70,6 +70,12 @@ ul {
     border-radius: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.activeCard {
+    display: block;
+}
+.hiddenCard {
+    display: none;
 }
 /* ********** COLOUR BOX SECTION ********** */
 .colorBox {
@@ -107,6 +113,7 @@ button {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 .activeButton {
     background-color: var(--luffySub);
