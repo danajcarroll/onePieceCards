@@ -14,11 +14,11 @@
     <main>
         <!-- TOP LEVEL BUTTONS -->
             <ul class="characters">
-                <li class="characterCircles" id="luffy"></li>
-                <li class="characterCircles" id="zoro"></li>
-                <li class="characterCircles" id="nami"></li>
-                <li class="characterCircles" id="usopp"></li>
-                <li class="characterCircles" id="sanji"></li>
+                <li class="characterCircles" id="luffy"><img src="images/iconImages/iconLuffy.png" class="iconImage" alt=""></li>
+                <li class="characterCircles" id="zoro"><img src="images/iconImages/iconZoro.png" class="iconImage" alt=""></li>
+                <li class="characterCircles" id="nami"><img src="images/iconImages/iconNami.png" class="iconImage" alt=""></li>
+                <li class="characterCircles" id="usopp"><img src="images/iconImages/iconUsopp.png" class="iconImage" alt=""></li>
+                <li class="characterCircles" id="sanji"><img src="images/iconImages/iconSanji.png" class="iconImage" alt=""></li>
             </ul>
 
         <!-- CHARACTER CARD -->
@@ -27,11 +27,13 @@
         <div class="characterCards activeCard" id="luffyCard">
             <div class="colorBox mainColor">
                 <h1 class="name" id="name">STRAW HAT LUFFY</h1>
-                <img src="images/luffy-pre.png" alt="Luffy before timeskip" class="characterPic activeImage preSkip">
-                <img src="images/luffy-post.png" alt="Luffy after timeskip" class="characterPic hiddenImage postSkip">
+                <div class="imageHolder">
+                    <img src="images/luffy-pre.png" alt="Luffy before timeskip" class="characterPic activeImage preSkip">
+                    <img src="images/luffy-post.png" alt="Luffy after timeskip" class="characterPic hiddenImage postSkip">
+                </div>
                 <div class="imageButtons">
-                    <button class="preButton subColor">Pre Time-Skip</button>
-                    <button class="postButton">Post Time-Skip</button>
+                    <button class="preButton active" id="preButton">Pre Time-Skip</button>
+                    <button class="postButton" id="postButton">Post Time-Skip</button>
                 </div>
             </div>
 
@@ -90,11 +92,11 @@
 
         <!-- BOTTOM LEVEL BUTTONS -->
         <ul class="characters">
-            <li class="characterCircles" id="chopper"></li>
-            <li class="characterCircles" id="nico"></li>
-            <li class="characterCircles" id="franky"></li>
-            <li class="characterCircles" id="brook"></li>
-            <li class="characterCircles" id="jinbe"></li>
+            <li class="characterCircles" id="chopper"><img src="images/iconImages/iconChopper.png" class="iconImage" alt=""></li>
+            <li class="characterCircles" id="nico"><img src="images/iconImages/iconNico.png" class="iconImage" alt=""></li>
+            <li class="characterCircles" id="franky"><img src="images/iconImages/iconFranky.png" class="iconImage" alt=""></li>
+            <li class="characterCircles" id="brook"><img src="images/iconImages/iconBrook.png" class="iconImage" alt=""></li>
+            <li class="characterCircles" id="jinbe"><img src="images/iconImages/iconJinbe.png" class="iconImage" alt=""></li>
         </ul>
 
     </main>
