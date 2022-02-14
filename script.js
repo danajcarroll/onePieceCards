@@ -11,12 +11,12 @@ let charPicture = document.getElementsByClassName('characterPic');
 let preSkip = document.getElementsByClassName('preSkip');
 let postSkip = document.getElementsByClassName('postSkip');
 
-let bigName = document.getElementById('luffyName');
-let fullName = document.getElementById('luffyFullName');
-let occupation = document.getElementById('luffyOccupation');
-let originPlace = document.getElementById('luffyOrigin');
-let ability = document.getElementById('luffyAbility');
-let bounty = document.getElementById('luffyBounty');
+let bigName = document.getElementById('name');
+let fullName = document.getElementById('fullName');
+let occupation = document.getElementById('occupation');
+let originPlace = document.getElementById('origin');
+let ability = document.getElementById('ability');
+let bounty = document.getElementById('bounty');
 
 // Changing character circle colours!
 for (let i = 0; i < charCircle.length; i++) {
@@ -30,18 +30,6 @@ for (let i = 0; i < charCircle.length; i++) {
     charCircle[i].addEventListener('click', function() {
         let circleID = charCircle[i].id;
         console.log(circleID);
-
-        // // Removes .activeCard class and adds .hiddenCard class
-        // for (let i = 0; i < charCard.length; i++) {
-        //     charCard[i].classList.remove('activeCard');
-        //     charCard[i].classList.add('hiddenCard');
-        // }
-        // // Adds .activeCard and removes .hiddenCard to current characterCard
-        // if (charCard[i].id === `${circleID}Card`) {
-        //     // console.log(charCard[i]);
-        //     charCard[i].classList.add('activeCard');
-        //     charCard[i].classList.remove('hiddenCard');
-        // }
         
         bigName.innerHTML = document.getElementById(`${circleID}Name`).innerHTML;
         fullName.innerHTML = document.getElementById(`${circleID}FullName`).innerHTML;
