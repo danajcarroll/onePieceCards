@@ -137,7 +137,7 @@ button {
 .infoText {
     margin-bottom: 1rem;
 }
-li {
+span {
     color: var(--greyText);
     font-size: 0.9rem;
 }
