@@ -26,7 +26,7 @@
         <!-- LUFFY CARD -->
         <div class="characterCards activeCard" id="luffyCard">
             <div class="colorBox mainColor">
-                <h1 class="name">STRAW HAT LUFFY</h1>
+                <h1 class="name" id="luffyName">STRAW HAT LUFFY</h1>
                 <img src="images/luffy-pre.png" alt="Luffy before timeskip" class="characterPic activeImage preSkip">
                 <img src="images/luffy-post.png" alt="Luffy after timeskip" class="characterPic hiddenImage postSkip">
                 <div class="imageButtons">
@@ -37,10 +37,10 @@
 
             <div class="infoBox">
                 <ul class="infoText">
-                    <li><span class="mainColorFont">Full Name:</span> Monkey D. Luffy</li>
-                    <li><span class="mainColorFont">Occupation:</span> Captain</li>
-                    <li><span class="mainColorFont">Origin:</span> East Blue</li>
-                    <li><span class="mainColorFont">Special Ability:</span> Gum Gum Fruit</li>
+                    <li class="mainColorFont">Full Name:<span id="luffyFullName"> Monkey D. Luffy</span></li>
+                    <li class="mainColorFont">Occupation:<span id="luffyOccupation"> Captain</span></li>
+                    <li class="mainColorFont">Origin:<span id="luffyOrigin"> East Blue</span></li>
+                    <li class="mainColorFont">Special Ability:<span id="luffyAbility"> Gum Gum Fruit</span></li>
                 </ul>
                 <div class="bountyBox mainColor">
                     <div class="bountyTab subColor">
@@ -48,7 +48,7 @@
                         <p>bounty</p>
                     </div>
                     <div class="numberTab">
-                        <h2>500,000,000</h2>
+                        <h2 id="luffyBounty">500,000,000</h2>
                     </div>
                 </div>
             </div>
@@ -57,33 +57,12 @@
 
         <!-- ZORO CARD -->
         <div class="characterCards hiddenCard" id="zoroCard">
-            <div class="colorBox mainColor">
-                <h1 class="name">ZORO</h1>
-                <img src="images/zoro-pre.png" alt="" class="characterPic activeImage preSkip">
-                <img src="images/zoro-post.png" alt="" class="characterPic hiddenImage postSkip">
-                <div class="imageButtons">
-                    <button class="preButton subColor">Pre Time-Skip</button>
-                    <button class="postButton">Post Time-Skip</button>
-                </div>
-            </div>
-
-            <div class="infoBox">
-                <ul class="infoText">
-                    <li><span class="mainColorFont">Full Name:</span> Roronoa Zoro</li>
-                    <li><span class="mainColorFont">Occupation:</span> Swordsman</li>
-                    <li><span class="mainColorFont">Origin:</span> East Blue</li>
-                    <li><span class="mainColorFont">Special Ability:</span> Three Sword Style</li>
-                </ul>
-                <div class="bountyBox mainColor">
-                    <div class="bountyTab subColor">
-                        <h3>$</h3>
-                        <p>bounty</p>
-                    </div>
-                    <div class="numberTab">
-                        <h2>390,000,000</h2>
-                    </div>
-                </div>
-            </div>
+                <h1 id="zoroName">ZORO</h1>
+                    <span id="zoroFullName"> Roronoa Zoro</span></li>
+                    <span id="zoroOccupation"> Swordsman</span></li>
+                    <span id="zoroOrigin"> East Blue</span></li>
+                    <span id="zoroAbility"> Three Sword Style</span></li>
+                <h2 id="zoroBounty">390,000,000</h2>
         </div>
         <!-- END ZORO CARD -->
 
