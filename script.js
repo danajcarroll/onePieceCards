@@ -11,30 +11,44 @@ let charPicture = document.getElementsByClassName('characterPic');
 let preSkip = document.getElementsByClassName('preSkip');
 let postSkip = document.getElementsByClassName('postSkip');
 
+let bigName = document.getElementById('luffyName');
+let fullName = document.getElementById('luffyFullName');
+let occupation = document.getElementById('luffyOccupation');
+let originPlace = document.getElementById('luffyOrigin');
+let ability = document.getElementById('luffyAbility');
+let bounty = document.getElementById('luffyBounty');
+
 // Changing character circle colours!
 for (let i = 0; i < charCircle.length; i++) {
     let circleID = charCircle[i].id;
     charCircle[i].style.backgroundColor = `var(--${circleID}Main)`;
 };
 
+
 // Character Button Click
 for (let i = 0; i < charCircle.length; i++) {
     charCircle[i].addEventListener('click', function() {
         let circleID = charCircle[i].id;
-        // console.log(circleID);
+        console.log(circleID);
 
-        // Removes .activeCard class and adds .hiddenCard class
-        for (let i = 0; i < charCard.length; i++) {
-            charCard[i].classList.remove('activeCard');
-            charCard[i].classList.add('hiddenCard');
-        }
-        // Adds .activeCard and removes .hiddenCard to current characterCard
-        if (charCard[i].id === `${circleID}Card`) {
-            // console.log(charCard[i]);
-            charCard[i].classList.add('activeCard');
-            charCard[i].classList.remove('hiddenCard');
-        }
+        // // Removes .activeCard class and adds .hiddenCard class
+        // for (let i = 0; i < charCard.length; i++) {
+        //     charCard[i].classList.remove('activeCard');
+        //     charCard[i].classList.add('hiddenCard');
+        // }
+        // // Adds .activeCard and removes .hiddenCard to current characterCard
+        // if (charCard[i].id === `${circleID}Card`) {
+        //     // console.log(charCard[i]);
+        //     charCard[i].classList.add('activeCard');
+        //     charCard[i].classList.remove('hiddenCard');
+        // }
         
+        bigName.innerHTML = document.getElementById(`${circleID}Name`).innerHTML;
+        fullName.innerHTML = document.getElementById(`${circleID}FullName`).innerHTML;
+        occupation.innerHTML = document.getElementById(`${circleID}Occupation`).innerHTML;
+        originPlace.innerHTML = document.getElementById(`${circleID}Origin`).innerHTML;
+        ability.innerHTML = document.getElementById(`${circleID}Ability`).innerHTML;
+        bounty.innerHTML = document.getElementById(`${circleID}Bounty`).innerHTML;
         // Changing color theme
         for (let i = 0; i < mainColor.length; i++) {
             mainColor[i].style.backgroundColor = `var(--${circleID}Main)`;
@@ -45,9 +59,6 @@ for (let i = 0; i < charCircle.length; i++) {
         for (let i = 0; i < subColor.length; i++) {
             subColor[i].style.backgroundColor = `var(--${circleID}Sub)`;
         }
-
-        preButton[i].classList.add('subColor');
-        postButton[i].classList.remove('subColor');
     })
 }
 
