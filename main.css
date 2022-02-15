@@ -119,9 +119,6 @@ li {
 .characterPic {
     width: 100%;
 }
-.activeImage {
-    display: block;
-}
 .hiddenImage {
     display: none;
 }
