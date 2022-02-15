@@ -64,8 +64,8 @@ for (let i = 0; i < charCircle.length; i++) {
             subColor[i].style.backgroundColor = `var(--${circleID}Sub)`;
         }
         // Image Source Change
-        preSkipImage.src = `../images/${circleID}-pre.png`;
-        postSkipImage.src = `../images/${circleID}-post.png`;
+        preSkipImage.src = `../images/mainImages/${circleID}-pre.png`;
+        postSkipImage.src = `../images/mainImages/${circleID}-post.png`;
         preSkipImage.classList.remove('hiddenImage');
         postSkipImage.classList.add('hiddenImage');
 
